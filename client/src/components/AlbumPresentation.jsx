@@ -16,15 +16,15 @@ export default function AlbumPresentation({ title, subtitle, img, minutes, genre
             </div>
 
             <p>{paragraph}</p>
-            <span className="information">+ More information</span>
+            <Link to="/support" className="information">Consult more information &gt;</Link>
 
             <ul className="buttons">
                 <Link to="/platforms/2" className="glasmorphism_button">
                     Hear Album
-                    <img src="/img/arrowLink.svg" alt="" />
                 </Link>
                 <Link to="/albums_store" className="glasmorphism_button">
                     Buy Album
+                    <img src="/img/arrowLink.svg" alt="" />
                 </Link>
             </ul>
         </section>

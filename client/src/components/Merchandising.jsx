@@ -11,7 +11,7 @@ export default function Merchandising({ title, subtitle, img, minutes, genre, so
             </div>
 
             <p>{paragraph}</p>
-            <span className="information">more information</span>
+            <span className="information">Consult more information</span>
 
             <ul className="buttons">
                 <Link to="/merch_store" className="glasmorphism_button">
