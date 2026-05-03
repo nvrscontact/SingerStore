@@ -11,10 +11,7 @@ function Platforms() {
   const platform = platforms.find(
     (a) => a.id === Number(id)
   );
-
-
-
-
+  
   return (
     <div className='platforms'>
       <h1>Platforms</h1>

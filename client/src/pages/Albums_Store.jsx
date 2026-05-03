@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Store_Albums_Article from '../components/subcomponents/Store_Albums_Article';
 
 // useEffect: al cargar pagina muestra los datos sin necesitar presionar algo.
-function AlbumsPurchase() {
+function Albums_Store() {
 
   const [products, setProductos] = useState([]);
   const [title, setTitle] = useState("");
@@ -101,4 +101,4 @@ function AlbumsPurchase() {
   )
 }
 
-export default AlbumsPurchase
+export default Albums_Store

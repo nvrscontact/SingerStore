@@ -1,5 +1,7 @@
-export default function Merchandising({title, subtitle, img, minutes, genre, songs, paragraph, button, buttonTwo}){
-    return(
+import { Link } from "react-router-dom";
+
+export default function Merchandising({ title, subtitle, img, minutes, genre, songs, paragraph, button, buttonTwo }) {
+    return (
         <section className="article merchandising">
             <h1> {title} </h1>
             <span>{subtitle}</span>
@@ -12,12 +14,12 @@ export default function Merchandising({title, subtitle, img, minutes, genre, son
             <span className="information">more information</span>
 
             <ul className="buttons">
-                <li>
-                  <a>{button}</a>
-                </li>
-                
+                <Link to="/merch_store" className="glasmorphism_button">
+                    Shop Now
+                    <img src="/img/arrowLink.svg" alt="" />
+                </Link>
             </ul>
-            
+
         </section>
 
     )

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
     return (
         <section className="hero">
@@ -6,21 +8,22 @@ export default function Hero() {
             <div className="float album_title">
                 <section>
                     <h1>Folklore</h1>
-                    <span className="monthly_listeners">NEW</span>
                 </section>
-                <span>Best Album of the year</span>
+                <span>Nominated to <br /> Best Album of the year</span>
             </div>
 
-            <section className="float">
+            <section className="float float_billboard">
                 <ul className="billboard">
                     <li>#1 Spotify USA</li>
                     <li>#1 Spotify Canada </li>
                     <li>#2 Apple Music</li>
                 </ul>
-                <button>
-                    Stream now
-                    <a href=""><img src="/img/musicalNote.svg" alt="" /></a>
-                </button>
+                <Link to="/platforms/2">
+                    <button>
+                        Stream now
+                        <img src="/img/arrowLink.svg" alt="" />
+                    </button>
+                </Link>
             </section>
 
         </section>
