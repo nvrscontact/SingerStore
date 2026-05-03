@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Hero() {
     return (
         <section className="hero">
-            <img src="/img/presentationArtist.jpg" alt="" />
+            <img src="/img/background_artist_three.jpg" alt="" />
 
             <div className="float album_title">
                 <section>
@@ -21,7 +21,7 @@ export default function Hero() {
                 <Link to="/platforms/2">
                     <button>
                         Stream now
-                        <img src="/img/arrowLink.svg" alt="" />
+                        <img src="/img/arrow_link.svg" alt="" />
                     </button>
                 </Link>
             </section>

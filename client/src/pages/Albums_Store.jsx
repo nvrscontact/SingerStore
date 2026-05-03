@@ -44,6 +44,8 @@ function Albums_Store() {
 
   return (
     <div className='albums_purchases_page'>
+
+      <h1>Welcome to Albums Store</h1>
       <section>
         <ul>
           {products.map((p) => (

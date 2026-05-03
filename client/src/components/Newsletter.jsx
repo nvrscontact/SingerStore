@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Newsletter({ title, subtitle, p1, p2, button }) {
     return (
-        <section className="article newsletter">
+        <section className="article newsletter_page">
             <h1>{title}</h1>
             <span>{subtitle}</span>
 
@@ -12,12 +12,7 @@ export default function Newsletter({ title, subtitle, p1, p2, button }) {
             </div>
 
             <form action="" className="newsletter_form">
-
                 <div>
-                    <label htmlFor="">
-                        First Name
-                        <input type="text" placeholder="First name" />
-                    </label>
                     <label htmlFor="">
                         Email
                         <input type="text" placeholder="Email Address" />

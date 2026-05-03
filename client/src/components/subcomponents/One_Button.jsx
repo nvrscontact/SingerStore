@@ -7,7 +7,7 @@ function One_Button({ url, msg, img }) {
   return (
     <>
     {/* para usar usenavigate en este ejemplo espera un string, no un objeto por eso no usar {}*/}
-      <button className='one_Button' onClick={() => navigate(url)}>
+      <button onClick={() => navigate(url)} className="glasmorphism_button">
         {msg}
       </button>
     </>

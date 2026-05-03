@@ -1,7 +1,7 @@
 import React from 'react'
 import One_Button from './One_Button'
 
-function Article_Albums({id,title,subtitle,img,date,url}) {
+function Article_Albums({ id, title, subtitle, img, date, url }) {
   return (
     <>
       <section className='articleAlbums'>
@@ -9,12 +9,15 @@ function Article_Albums({id,title,subtitle,img,date,url}) {
         <span>{subtitle}</span>
 
         <div>
-           <img src={img} alt="" />
+          <img src={img} alt="" />
           <span>{date}</span>
         </div>
 
-      <One_Button url={`/platforms/${id}`} msg={"Listen"} img={"/img/arrowLink.svg"}/>
 
+
+        <ul className="buttons">
+          <One_Button url={`/platforms/${id}`} msg={"Listen Album"} img={"/img/arrowLink.svg"} />
+        </ul>
       </section>
     </>
   )

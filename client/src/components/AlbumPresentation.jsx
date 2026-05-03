@@ -23,7 +23,7 @@ export default function AlbumPresentation({ title, subtitle, img, minutes, genre
                     Hear Album
                     <img src="/img/arrowLink.svg" alt="" />
                 </Link>
-                <Link to="/albums_store0" className="glasmorphism_button">
+                <Link to="/albums_store" className="glasmorphism_button">
                     Buy Album
                 </Link>
             </ul>

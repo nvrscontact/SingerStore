@@ -83,6 +83,23 @@ export default function Footer() {
                         </li>
                     </ul>
                 </details>
+                  <details>
+                    <summary>Accesibility <img src="/img/arrowDown.svg" alt="" /> </summary>
+                    <ul>
+                        <li>
+                            <Link to="" href="">Contact</Link>
+                        </li>
+                        <li>
+                            <Link to="" href="">Store</Link>
+                        </li>
+                        <li>
+                            <Link to="" href="">Refunds</Link>
+                        </li>
+                        <li>
+                            <Link to="" href="">Tour</Link>
+                        </li>
+                    </ul>
+                </details>
             </nav>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi! </p>

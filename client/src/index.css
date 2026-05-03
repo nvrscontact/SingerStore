@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box; /* FUNDAMENTAL TO AVOID NAV ERRORS WHEN WE USE FIXED POSITION */
 
 }
 
@@ -10,12 +11,22 @@
   --opaque-white-one: rgba(255, 255, 255, 0.1);
   --opaque-white-two: rgba(255, 255, 255, 0.2);
   --opaque-white-three: rgba(255, 255, 255, 0.3);
+  --opaque-white-four: rgba(255, 255, 255, 0.4);
+  --opaque-white-five: rgba(255, 255, 255, 0.5);
+  --opaque-white-six: rgba(255, 255, 255, 0.6);
+  --opaque-white-seven: rgba(255, 255, 255, 0.7);
+  --opaque-white-eight: rgba(255, 255, 255, 0.8);
+  --opaque-white-nine: rgba(255, 255, 255, 0.9);
+  
+
+
 }
 
 body {
   background-color: #0a0d11;
   color: rgba(255, 255, 255, 0.5);
   font-family: inter;
+  padding-top:60px;
 }
 
 li {
@@ -62,12 +73,16 @@ a {
 
 
 .navbar {
-  position: relative;
+  position: fixed;
+  z-index:9;
+  top:0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #0a0d11;
   padding: 12px 15px;
+  width:100vw;
+  border-bottom:1px solid var(--opaque-white-three);
 
   section {
     display: flex;
@@ -98,7 +113,6 @@ a {
     top: 55px;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
-    width: 100%;
     padding: 25px 20px;
 
     ul li a {
@@ -150,14 +164,21 @@ a {
   position: relative;
 
   h1 {
+
     font-size: 50px;
+    color: rgba(255, 255, 255, 0.7);
+
+  }
+
+  span {
+    color: rgba(255, 255, 255, 0.7);
   }
 
   img {
     width: 100%;
     height: 85vh;
-    /* filter: brightness(.9); */
-
+    filter: brightness(.6);
+  border-bottom:1px solid var(--opaque-white-six);
   }
 
   .float {
@@ -187,15 +208,24 @@ a {
     display: flex;
     flex-direction: column;
     font-weight: 300;
-    gap: 6px;
+    gap: 8px;
+
+    li {
+      color: rgba(255, 255, 255, 0.7);
+    }
   }
 
+  .float_billboard{
+    img{
+      filter: brightness(.9);
+    }
+  }
   .billboard li:nth-child(1) {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .billboard li:nth-child(2) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .billboard li:nth-child(3) {
@@ -204,8 +234,8 @@ a {
 
 
   button {
-    background-color: var(--opaque-white-one);
-    border: 1px solid var(--opaque-white-one);
+    background-color: var(--opaque-white-two);
+    border: 1px solid var(--opaque-white-two);
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -344,6 +374,9 @@ a {
   align-items: end;
   text-align: end;
 
+  border-top:1px solid var(--opaque-white-three);
+  border-bottom:1px solid var(--opaque-white-three);
+  padding:60px 0;
   div img {
     height: 300px;
   }
@@ -351,12 +384,11 @@ a {
 
 /* ----- NEWSLETTER ( C ) ----- */
 
-.newsletter {
+.newsletter_page {
   margin: 150px 40px;
 
   div {
     width: 100%;
-    margin: 25px 0;
     gap: 10px;
   }
 }
@@ -367,7 +399,7 @@ a {
 
   input {
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   div label {
@@ -377,19 +409,19 @@ a {
 
     input {
       padding: 12px 16px;
-      background:none;
+      background: none;
       font-size: 16px;
-      border:1px solid rgb(114, 114, 114);
-      color: black;
+      border: 1px solid rgba(255, 255, 255, 0.6);
     }
   }
 
   button {
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 12px 16px;
     color: black;
-    background-color: rgb(114, 114, 114);
+    background-color:  rgba(255, 255, 255, 0.6);
+    font-size: 16px;
 
   }
 }
